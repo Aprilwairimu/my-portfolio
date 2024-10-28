@@ -625,7 +625,7 @@
               <h4>App 1</h4>
               <p>App</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/Telehealth B.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/Telehealth.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -669,7 +669,7 @@
               <p>Card</p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/Blog screenshot.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details-d.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -683,7 +683,7 @@
               <p>Web</p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/gram.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details-e.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -697,7 +697,7 @@
               <p>App</p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/7220 screenshot.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details-f.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -823,7 +823,7 @@
           <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
         </div>
         <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
         </div>
         <div class="text-center"><button type="submit">Send Message</button></div>
       </form>
@@ -832,6 +832,14 @@
       <div id="message-success" style="display: none;">Your message has been sent. Thank you!</div>
       <div id="message-error" style="display: none;">There was an error sending the message.</div>
 
+      <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+      <!-- Include EmailJS library -->
+      <script>
+        (function () {
+          emailjs.init("QXOK0L1XP_ETH1nmn"); // Initialize EmailJS with your user ID
+        })();
+      </script>
+      <script src="contact.js"></script> <!-- Link to your JavaScript file -->
 
     </div>
   </section><!-- End Contact Section -->
